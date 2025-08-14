@@ -41,8 +41,8 @@ if st.button("Predict Customer Segment"):
     # استخدام الموديل لعمل Prediction
     # بما إن الـModel بتاعك Agglomerative Clustering فبنستخدم fit_predict
     # لو كان Model تاني زي K-Means كنا ممكن نستخدم predict
-    # prediction = loaded_model.fit_predict(input_data)
-    prediction = loaded_model.predict(input_data)
+    prediction = loaded_model.fit_predict(input_data)
+    # prediction = loaded_model.predict(input_data)
 
     # عرض النتيجة
     st.header("Prediction Result")
