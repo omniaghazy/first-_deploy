@@ -17,7 +17,7 @@ import joblib
 
 # قراءة الـModel
 try:
-    loaded_model = joblib.load("AgglomerativeClustering.pkl")
+    loaded_model = joblib.load("kmeans.pkl")
     st.success("Model loaded successfully!")
 except FileNotFoundError:
     st.error("Error: The model file 'AgglomerativeClustering.pkl' was not found.")
